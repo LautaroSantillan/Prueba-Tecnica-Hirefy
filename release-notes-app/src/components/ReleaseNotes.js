@@ -48,13 +48,13 @@ const ReleaseNotes = () => {
                     <hr />
                     {releases.map((release, index) => (
                         <div key={index} className='release-note'>
+                            <h3>{release.title}</h3>
                             <div className='release-header'>
                                 <Chip type={release.type} />
                                 <p>{release.date}</p>
                             </div>
-                            <h3>{release.title}</h3>
-                            {release.image && <img src={release.image} alt={release.title} />}
                             <p className='release-description'>{release.description}</p>
+                            {release.image && <img src={release.image} alt={release.title} />}
                             {release.list && (
                                 <ul className='list-bugs'>
                                     {Object.values(release.list[0]).map((item, idx) => (
