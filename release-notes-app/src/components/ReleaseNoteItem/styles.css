@@ -1,0 +1,9 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.release-note-item {
+    margin-bottom: 20px;
+    animation: fadeIn .5s ease-in;
+}

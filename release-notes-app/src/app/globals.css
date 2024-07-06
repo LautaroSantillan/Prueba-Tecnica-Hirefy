@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    padding: 40px;
+    background: linear-gradient(to right, #0D5287, #187DCA, #05AACE, #04D2C6, #26E4C7);
+}
+
+.header h1 {
+    padding-left: 50px;
+    font-size: 44px;
+    color: #fff;
+}
